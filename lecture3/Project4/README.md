@@ -1,61 +1,51 @@
 ## Wireless Products and Manufacturers
 name:jiancai Hou 
 Student ID:s2314604
+ 
+---
 
-1) **LoRaWAN Gateway** – Manufacturer: RAKwireless  
-   Link: https://store.rakwireless.com/collections/wisgate-lorawan-gateways  
-   A LoRaWAN gateway receives and forwards data from many low-power sensors over long distances to a network server. RAKwireless WisGate gateways support multiple channels and rugged connectivity suitable for industrial IoT. :contentReference[oaicite:18]{index=18}
+## Selected Device
+**Nordic Semiconductor nRF52840 (BLE SoC)**
 
-2) **Zigbee Module** – Manufacturer: Nordic Semiconductor  
-   Link: https://www.nordicsemi.com/Products/Wireless/Zigbee  
-   Nordic’s Zigbee modules provide low-power wireless mesh connectivity for smart home and sensor devices. The nRF52840 SoC supports Zigbee along with Bluetooth LE for flexible IoT designs. :contentReference[oaicite:19]{index=19}
+## Official Datasheet
+https://www.nordicsemi.com/Products/nRF52840
 
-3) Manufacturer: Infineon Technologies
-Link: https://www.infineon.com/products/wireless-connectivity/airoc-wi-fi-plus-bluetooth-combos/wi-fi-6-6e
+---
 
-Description: Infineon’s AIROC Wi-Fi 6/6E chipsets enable high-speed 802.11ax wireless communication with improved data rates, efficiency, and reduced latency. They support multi-band connectivity and enhanced coexistence with Bluetooth, improving performance in dense IoT environments.
+## Device Overview
+The nRF52840 is a Bluetooth Low Energy (BLE) System-on-Chip integrating a 2.4 GHz RF transceiver with a powerful ARM Cortex-M4F microcontroller. It is widely used in IoT, wearable, and wireless sensor applications.
 
-4) NB-IoT Module
+---
 
-Manufacturer: iFrogLab
-Link: https://www.ifroglab.com/
- (products section)
-Description: iFrogLab produces NB-IoT modules designed for cellular IoT connectivity over narrowband networks, providing long range and low power consumption. These modules are used for smart metering, asset tracking, and environmental monitoring with carrier network integration.
+## RF System Blocks Explanation
 
+### 1. Information Source / MCU
+The ARM Cortex-M4F MCU runs the application firmware and protocol stack. It generates digital data that will be transmitted over the RF link and processes received data from the RF subsystem.
 
-5) Sigfox Device
+### 2. Modulation / Demodulation
+This block converts digital data into a modulated RF signal for transmission and demodulates received RF signals back into digital form. The nRF52840 supports GFSK modulation for Bluetooth Low Energy.
 
-Manufacturer: iFrogLab
-Link: https://www.ifroglab.com/
- (Sigfox module products)
-Description: iFrogLab’s Sigfox modules support ultra-narrowband communication over the Sigfox network, enabling low-power data transmission for IoT devices. These devices are ideal for long-range, low-data-rate applications such as remote sensors and asset tagging.
+### 3. RF Transceiver (Tx/Rx)
+The RF transceiver handles both transmission and reception at 2.4 GHz. It performs frequency synthesis, upconversion for transmission, and downconversion for reception.
 
+### 4. Power Amplifier (PA)
+The PA amplifies the RF signal before it is sent to the antenna. This increases the transmission range while maintaining controlled output power to meet regulatory limits.
 
-6) Bluetooth Low Energy (BLE) Beacon
+### 5. Low Noise Amplifier (LNA)
+The LNA amplifies very weak incoming RF signals from the antenna with minimal added noise. This improves receiver sensitivity and communication reliability.
 
-Manufacturer: Nordic Semiconductor
-Link: https://www.nordicsemi.com/Products/Wireless/Zigbee
- (BLE is part of multiprotocol support)
-Description: Nordic Semiconductor designs BLE SoCs that power BLE beacons used for proximity sensing, indoor navigation, and asset tracking. These chips emphasize ultra-low power operation, enabling battery-powered beacons to last for years.
+### 6. RF Filtering / Matching Network
+This block ensures impedance matching between the RF transceiver and the antenna. It also suppresses unwanted harmonics and out-of-band noise.
 
-7) Ultra-Wideband (UWB) Transceiver
+### 7. Antenna Interface
+The antenna interface connects the RF front-end to an external or PCB antenna. It radiates transmitted signals and captures incoming wireless signals.
 
-Manufacturer: Alereon
-Link: https://en.wikipedia.org/wiki/Alereon
+### 8. Power Supply for RF Section
+A dedicated regulated power supply provides stable voltage to RF blocks. This ensures low noise operation and stable RF performance.
 
-Description: Alereon develops UWB integrated circuits that enable high-precision wireless communication and ranging over ultra-wide bandwidth. UWB transceivers are used in location tracking, secure access, and high-speed short-range communication applications.
+---
 
-8) Wi-Fi 6E Access Point
+## RF Block Diagram
+See the file below:
 
-Manufacturer: Qualcomm (example chipset provider)
-Link: https://www.sparklan.com/powerful-capable-tri-band-wi-fi-6-6e-solution/
-
-Description: Wi-Fi 6E access points use tri-band 802.11ax technology including the 6 GHz spectrum to provide higher throughput and less congestion. Qualcomm’s qualified Wi-Fi 6/6E solutions support faster data rates, lower latency, and robust connectivity in dense enterprise environments.
-
-9) 5G IoT Module
-
-Manufacturer: u-blox
-Link: https://en.wikipedia.org/wiki/U-blox
-
-Description: u-blox manufactures 5G IoT modules and chipsets that integrate cellular connectivity for IoT applications, offering global coverage and high-speed data transfer. These modules support modern cellular standards including 5G NR, enabling advanced telematics, industrial automation, and smart infrastructure connectivity.
-
+`nRF52840_RF_Block_Diagram.png`

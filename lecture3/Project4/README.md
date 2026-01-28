@@ -9,6 +9,7 @@ Student ID:s2314604
 
 ## Official Datasheet
 https://www.nordicsemi.com/Products/nRF52840
+<img width="1717" height="935" alt="image" src="https://github.com/user-attachments/assets/d603dfe4-091f-4e3c-a171-0135add358ef" />
 
 ---
 

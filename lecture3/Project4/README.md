@@ -50,3 +50,69 @@ A dedicated regulated power supply provides stable voltage to RF blocks. This en
 See the file below:
 
 `nRF52840_RF_Block_Diagram.png`
+
+
+Selected Device
+
+Device Name: ESP32 (2.4 GHz Wi-Fi + Bluetooth Low Energy SoC)
+Manufacturer: Espressif Systems
+
+Datasheet Link:
+https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+
+Objective
+
+The objective of this task is to understand the internal RF system structure of a real wireless communication device.
+By identifying and explaining the main RF blocks of the ESP32, this task develops system-level RF thinking, which is an essential skill for IoT, embedded, and wireless engineers.
+
+RF System Block Diagram
+
+See the file below:
+
+ESP32_RF_Block_Diagram.png
+
+RF Block Explanations
+1. Information Source / MCU
+
+The ESP32 uses a dual-core Tensilica Xtensa MCU to process application logic and communication protocols.
+Digital baseband data for Wi-Fi or BLE is generated here before being sent to the RF transceiver.
+
+2. Modulation / Demodulation
+
+This block converts digital baseband data into modulated RF signals and vice versa.
+For transmission, data is modulated (e.g., GFSK for BLE, OFDM for Wi-Fi), and for reception, incoming RF signals are demodulated back into digital data.
+
+3. RF Transceiver (Tx / Rx)
+
+The RF transceiver handles frequency conversion between baseband and the 2.4 GHz RF band.
+It switches between transmit and receive modes and manages upconversion and downconversion of signals.
+
+4. Power Amplifier (PA)
+
+The power amplifier boosts the RF signal power during transmission.
+This ensures the signal has sufficient strength to reach other wireless devices within the required range.
+
+5. Low Noise Amplifier (LNA)
+
+The LNA amplifies weak received RF signals while adding minimal noise.
+This improves receiver sensitivity and helps maintain reliable communication.
+
+6. RF Filtering / Matching Network
+
+This block filters unwanted frequencies and matches the impedance between the RF transceiver and the antenna.
+Proper filtering and matching improve signal quality and maximize power transfer.
+
+7. Antenna Interface
+
+The antenna interface connects the RF front end to an external or PCB antenna.
+It radiates transmitted RF energy and captures incoming wireless signals.
+
+8. Power Supply for RF Section
+
+A dedicated power supply provides stable voltage to RF blocks such as the PA, LNA, and transceiver.
+Good power regulation is critical to minimize noise and ensure RF performance stability.
+
+Conclusion
+
+The ESP32 integrates MCU, baseband processing, RF transceiver, and RF front-end components into a single SoC.
+This high level of integration makes it well suited for IoT and wireless applications while clearly demonstrating essential RF system blocks.

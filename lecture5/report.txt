@@ -1,1 +1,67 @@
+Wireless Communication Assignment Report
+1. Method
 
+In this assignment, the performance of WiFi, Bluetooth, and Cellular communication systems was analyzed as a function of distance.
+
+The received power was calculated using the Friis transmission equation:
+
+Pr = Pt * Gt * Gr * (lambda / (4 * pi * R))^2
+
+Where:
+Pr = received power (W)
+Pt = transmit power (W)
+Gt = transmitter antenna gain
+Gr = receiver antenna gain
+lambda = wavelength (m)
+R = distance (m)
+
+The wavelength was calculated as:
+
+lambda = c / f
+
+Where:
+c = speed of light (3 x 10^8 m/s)
+f = carrier frequency (Hz)
+
+The Signal-to-Noise Ratio (SINR) was calculated as:
+
+SINR = Pr / Pn
+
+Where:
+Pn = noise power (W)
+
+The channel capacity was calculated using Shannon capacity formula:
+
+C = BW * log2(1 + SINR)
+
+Where:
+C = channel capacity (bps)
+BW = bandwidth (Hz)
+
+For plotting, received power and SINR were converted to dB using:
+
+X_dB = 10 * log10(X)
+
+Capacity was also plotted in dB form as:
+
+C_dB = 10 * log10(C)
+
+2. Observations
+
+For all technologies, received power decreases rapidly as distance increases. This is because Pr is proportional to 1 / R^2 according to the Friis equation.
+
+Cellular communication maintains higher received power over long distances because it has higher transmit power (40 W) and lower frequency (850 MHz), which means a larger wavelength.
+
+WiFi has the largest bandwidth (22 MHz), so at short distances it provides higher channel capacity.
+
+Bluetooth operates at low power and short distance, so both SINR and capacity decrease quickly with distance.
+
+Bandwidth mainly determines the maximum achievable data rate, while transmit power and frequency influence coverage distance.
+
+3. Conclusion
+
+WiFi is suitable for short-range high-data-rate communication.
+
+Bluetooth is suitable for short-range, low-power applications.
+
+Cellular systems support longer distances due to higher transmit power and lower frequency, but the bandwidth is smaller, which limits the maximum data rate compared to WiFi at short range.

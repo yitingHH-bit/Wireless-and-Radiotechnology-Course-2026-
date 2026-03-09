@@ -1,26 +1,22 @@
 import socket
-import random
-import time
 
-HOST = "127.0.0.1"   # Server IP address
-PORT = 5000          # Server port
+HOST = "192.168.204.243"
+PORT = 5000
 
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.bind((HOST, PORT))
+server.listen()
 
-def generate_sensor_data():
-    temperature = round(random.uniform(20.0, 30.0), 1)
-    return f"Temperature: {temperature} C"
+print("Server started, waiting for connection...")
 
+conn, addr = server.accept()
+print("Connected by", addr)
 
-def start_client():
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
-        client_socket.connect((HOST, PORT))
-        print(f"Connected to server at {HOST}:{PORT}")
+while True:
+    data = conn.recv(1024)
+    if not data:
+        break
 
-        while True:
-            message = generate_sensor_data()
-            client_socket.sendall(message.encode("utf-8"))
-            print(f"Sent: {message}")
-            time.sleep(5)
+    print("Received:", data.decode())
 
-if __name__ == "__main__":
-    start_client()
+conn.close()

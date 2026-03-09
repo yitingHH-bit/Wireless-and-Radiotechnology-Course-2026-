@@ -2,7 +2,7 @@ import socket
 import random
 import time
 
-SERVER_BLUETOOTH_MAC = "XX:XX:XX:XX:XX:XX"   # Replace with the server device Bluetooth MAC address
+SERVER_BLUETOOTH_MAC = "84:14:4D:08:76:1C"
 PORT = 4
 
 def generate_sensor_data():

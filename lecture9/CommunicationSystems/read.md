@@ -29,3 +29,8 @@ Open a terminal and run:
 python server.py
 <img width="1046" height="271" alt="image" src="https://github.com/user-attachments/assets/bdc0f81e-9da9-4068-b44b-739c372d3a00" />
 <img width="586" height="308" alt="image" src="https://github.com/user-attachments/assets/aebc2356-2cb8-4817-b3f9-02d47057207b" />
+
+2 laptop
+
+<img width="1047" height="313" alt="image" src="https://github.com/user-attachments/assets/64b38cab-f261-4ea6-a13f-61b05176740f" />
+<img width="1409" height="1047" alt="image" src="https://github.com/user-attachments/assets/530fb37b-1c8a-4b4b-9d63-f4a0c8c48b71" />

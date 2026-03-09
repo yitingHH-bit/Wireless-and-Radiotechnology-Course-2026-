@@ -1,6 +1,6 @@
 import socket
 
-SERVER_BLUETOOTH_MAC = "XX:XX:XX:XX:XX:XX"   # Replace with the server device Bluetooth MAC address
+SERVER_BLUETOOTH_MAC = "84:14:4D:08:76:1C"
 PORT = 4
 
 def start_server():
@@ -13,7 +13,7 @@ def start_server():
     try:
         server.bind((SERVER_BLUETOOTH_MAC, PORT))
         server.listen(1)
-
+        
         print("Waiting for Bluetooth client connection...")
         print(f"Server MAC address: {SERVER_BLUETOOTH_MAC}")
         print(f"RFCOMM channel: {PORT}")

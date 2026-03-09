@@ -27,3 +27,5 @@ Open a terminal and run:
 
 ```bash
 python server.py
+<img width="1046" height="271" alt="image" src="https://github.com/user-attachments/assets/bdc0f81e-9da9-4068-b44b-739c372d3a00" />
+<img width="586" height="308" alt="image" src="https://github.com/user-attachments/assets/aebc2356-2cb8-4817-b3f9-02d47057207b" />

@@ -156,23 +156,8 @@ screenshots/socket_communication.png
 
 # MQTT Communication Screenshot
 
-Insert a screenshot showing MQTT messages received by the cloud subscriber.
+ ![](Pasted%20image%2020260316135038.png)
 
-Example output:
-
-Edge device (publisher):
-
-Forwarded to MQTT: 23.41  
-Forwarded to MQTT: 24.02
-
-Cloud subscriber:
-
-Cloud received: 23.41  
-Cloud received: 24.02
-
-Example screenshot file:
-
-screenshots/mqtt_messages.png
 
 ---
 

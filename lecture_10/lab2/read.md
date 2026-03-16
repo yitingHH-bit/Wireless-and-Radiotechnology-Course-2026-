@@ -233,6 +233,4 @@ edge_device.py
 mqtt_alert_subscriber.py
 
 README.md
-
-screenshots/
-telegram_alert.png
+telegram_alert.JPG

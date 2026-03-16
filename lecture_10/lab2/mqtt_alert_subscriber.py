@@ -4,9 +4,9 @@ import requests
 broker = "broker.emqx.io"
 topic = "savonia/iot/temperature"
 
-TOKEN = "8678595733:AAGmZUsxZ4EqxjNX3gmcLOEPclvjT8nSbmA"
+TOKEN = "8678595733:XXX"
 CHAT_ID = "6983513269"
-#  https://api.telegram.org/bot8678595733:AAGmZUsxZ4EqxjNX3gmcLOEPclvjT8nSbmA/getUpdates
+#  https://api.telegram.org/bot8678595733:XXX/getUpdates
 threshold = 28
 
 def send_telegram(message):

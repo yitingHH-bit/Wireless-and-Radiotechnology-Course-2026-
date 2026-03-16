@@ -134,15 +134,15 @@ The edge device publishes sensor data to this topic and the cloud server subscri
 
 # Socket Communication Screenshot
 
-screenshots/lab1.jpg
+/lab1.jpg
 
 # MQTT Communication Screenshot
 
-screenshots/lab2.jpg
+/lab2.jpg
 ---
 # Full IoT Pipeline
 
-screenshots/lab3.jpg
+/lab3.jpg
 ---
 
 # How to Run the System

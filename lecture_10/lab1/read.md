@@ -1,3 +1,4 @@
+
 # Lab Series: From Sockets to MQTT in IoT Systems
 
 This project implements a small IoT communication pipeline using Python.  
@@ -133,52 +134,15 @@ The edge device publishes sensor data to this topic and the cloud server subscri
 
 # Socket Communication Screenshot
 
-Insert a screenshot showing the socket communication between the sensor and the edge device.
-
-Example output:
-
-Sensor laptop:
-
-Sensor value sent: 23.41  
-Sensor value sent: 24.02
-
-Edge device laptop:
-
-Sensor connected: ('192.168.204.123', 53211)  
-Edge received: 23.41  
-Edge received: 24.02
-
-Example screenshot file:
-
-screenshots/socket_communication.png
-
----
+screenshots/lab1.jpg
 
 # MQTT Communication Screenshot
 
- ![](Pasted%20image%2020260316135038.png)
-
-
+screenshots/lab2.jpg
 ---
+# Full IoT Pipeline
 
-# Project Structure
-
-iot-socket-mqtt-lab/
-
-socket_server.py  
-socket_sensor.py  
-
-mqtt_publisher.py  
-mqtt_subscriber.py  
-
-edge_device.py  
-
-README.md  
-
-screenshots/  
-socket_communication.png  
-mqtt_messages.png  
-
+screenshots/lab3.jpg
 ---
 
 # How to Run the System
@@ -197,36 +161,8 @@ python mqtt_subscriber.py
 
 ---
 
-# Expected Output
-
-Sensor laptop:
-
-Sensor value sent: 24.12  
-Sensor value sent: 23.98
-
-Edge device:
-
-Edge received: 24.12  
-Forwarded to MQTT: 24.12
-
-Cloud subscriber:
-
-Cloud received: 24.12  
-Cloud received: 23.98
-
 ---
 
-# Learning Outcomes
-
-After completing this lab students will understand:
-
-- Socket based device communication
-- MQTT publish/subscribe messaging
-- Edge computing concepts
-- Basic IoT system architecture
-- Integration of multiple communication protocols
-
----
 
 # Future Improvements
 

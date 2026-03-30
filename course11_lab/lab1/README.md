@@ -8,6 +8,8 @@ jack hou
 #  run the Laptop 1  , socket_sensor.py
 <img width="1137" height="957" alt="image" src="https://github.com/user-attachments/assets/b31688e0-080b-437f-ae0d-f370e7ce78ea" />
 #  run laptop 2 , mqtt_subscriber.py
+<img width="1771" height="1063" alt="image" src="https://github.com/user-attachments/assets/3bf84767-29f3-4fc6-ae31-9af413a1c5e0" />
+and dashboard
 <img width="1390" height="763" alt="image" src="https://github.com/user-attachments/assets/661663e4-b6b9-4173-81a3-c11129d06c3b" />
 
 ## 1. System Description

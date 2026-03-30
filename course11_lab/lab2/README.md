@@ -17,7 +17,8 @@ Finally, Grafana on Laptop 1 subscribes to those MQTT topics and displays the va
 # running GUI
 <img width="1837" height="1075" alt="image" src="https://github.com/user-attachments/assets/2d46814d-ebb9-49fc-bd78-9ba32d3bf944" />
 ![WhatsApp Image 2026-03-30 at 20 26 39](https://github.com/user-attachments/assets/7312352f-6502-4511-abbb-a30077f90540)
-<img width="1751" height="975" alt="image" src="https://github.com/user-attachments/assets/a0182422-ab5e-4261-bc53-8d97f1802dd4" />
+
+<img width="1657" height="1022" alt="image" src="https://github.com/user-attachments/assets/f4830cc8-94d8-42ac-989a-9c9145dc7ca7" />
 
 ---
 

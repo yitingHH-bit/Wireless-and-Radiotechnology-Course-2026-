@@ -101,6 +101,7 @@ These values are combined into one message in the following format:
 ```python
 temperature,humidity,light
 #Reflection Question
+
 Why do we separate each sensor into a different MQTT topic?
 
 Separating each sensor into a different MQTT topic makes the system clearer, more flexible, and easier to scale. Each topic represents a single type of data (such as temperature, humidity, or light), which provides several advantages:

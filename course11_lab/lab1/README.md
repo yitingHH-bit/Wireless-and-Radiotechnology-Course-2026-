@@ -1,4 +1,8 @@
+jack hou 
+# change the PWD of Grafana, user name is  admin,http://localhost:3000
+
 # IoT Real-Time Monitoring with Socket, MQTT, and Grafana
+<img width="1717" height="808" alt="image" src="https://github.com/user-attachments/assets/69b4ee48-f900-4260-af24-37f989992979" />
 
 ## 1. System Description
 This project demonstrates a simple IoT pipeline with real-time monitoring.

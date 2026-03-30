@@ -1,6 +1,6 @@
 jack hou 
 # change the PWD of Grafana, user name is  admin,http://localhost:3000
-
+<img width="942" height="922" alt="image" src="https://github.com/user-attachments/assets/7cca6397-44fd-4fec-8afe-423607561246" />
 # IoT Real-Time Monitoring with Socket, MQTT, and Grafana
 <img width="1717" height="808" alt="image" src="https://github.com/user-attachments/assets/69b4ee48-f900-4260-af24-37f989992979" />
 #  run the Laptop 1 and  laptop 2 , edge_device.py

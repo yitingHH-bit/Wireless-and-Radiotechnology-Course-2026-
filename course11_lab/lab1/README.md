@@ -3,6 +3,11 @@ jack hou
 
 # IoT Real-Time Monitoring with Socket, MQTT, and Grafana
 <img width="1717" height="808" alt="image" src="https://github.com/user-attachments/assets/69b4ee48-f900-4260-af24-37f989992979" />
+#  run the Laptop 1 and  laptop 2 , edge_device.py
+<img width="1510" height="1052" alt="image" src="https://github.com/user-attachments/assets/08c0d206-e6cb-4de3-bc43-ada26920ee3f" />
+#  run the Laptop 1 and  laptop 2 , socket_sensor.py
+<img width="1137" height="957" alt="image" src="https://github.com/user-attachments/assets/b31688e0-080b-437f-ae0d-f370e7ce78ea" />
+#  run the Laptop 1 and  laptop 2 , .py
 
 ## 1. System Description
 This project demonstrates a simple IoT pipeline with real-time monitoring.

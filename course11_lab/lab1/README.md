@@ -41,8 +41,22 @@ Laptop 1 (Sensor)
 - **Port used:** `1883`
 - **MQTT topic used:** `savonia/iot/temperature`
 
-## 5. How to Run
+9. Limitation of the MQTT Visualization
 
-### On Laptop 2
-```bash
-python edge_device.py
+The Grafana MQTT data source supports live monitoring only.
+It does not store historical data by itself.
+If historical visualization is needed, a storage backend such as Loki or InfluxDB must be added.
+
+10. Reflection Questions
+What is the role of Grafana in this system?
+
+Grafana is used as a real-time monitoring dashboard. It visualizes the MQTT data stream so the user can observe sensor values live in the browser.
+
+Why is MQTT useful for monitoring applications?
+
+MQTT is lightweight and efficient. It is suitable for IoT and monitoring systems because it supports publish/subscribe communication and works well for sending small real-time messages.
+
+What is the difference between live monitoring and historical storage?
+
+Live monitoring shows the latest incoming data instantly as it arrives.
+Historical storage keeps old data so users can review trends, compare previous values, and analyze the system over time.

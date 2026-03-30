@@ -40,6 +40,7 @@ Laptop 1 (Sensor)
 - **Broker used:** `broker.emqx.io`
 - **Port used:** `1883`
 - **MQTT topic used:** `savonia/iot/temperature`
+<img width="820" height="426" alt="image" src="https://github.com/user-attachments/assets/3febdec1-f312-448e-b0d1-b0b56a3cfc15" />
 
 9. Limitation of the MQTT Visualization
 

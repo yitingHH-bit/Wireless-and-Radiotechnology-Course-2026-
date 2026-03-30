@@ -19,7 +19,9 @@ Finally, Grafana on Laptop 1 subscribes to those MQTT topics and displays the va
 ![WhatsApp Image 2026-03-30 at 20 26 39](https://github.com/user-attachments/assets/7312352f-6502-4511-abbb-a30077f90540)
 
 <img width="1657" height="1022" alt="image" src="https://github.com/user-attachments/assets/f4830cc8-94d8-42ac-989a-9c9145dc7ca7" />
-
+# about the state we set ,
+0 → red
+1 → green
 ---
 
 ## System Overview

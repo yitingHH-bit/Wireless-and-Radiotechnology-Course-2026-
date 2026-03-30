@@ -100,3 +100,18 @@ These values are combined into one message in the following format:
 
 ```python
 temperature,humidity,light
+#Reflection Question
+Why do we separate each sensor into a different MQTT topic?
+
+Separating each sensor into a different MQTT topic makes the system clearer, more flexible, and easier to scale. Each topic represents a single type of data (such as temperature, humidity, or light), which provides several advantages:
+
+Clear data structure
+Each topic contains only one type of data, making the system easier to understand and manage.
+Flexible subscription
+Different applications or dashboard panels can subscribe only to the data they need. For example, a Grafana panel can subscribe only to the temperature topic.
+Easy scalability
+When adding new sensors (such as pressure or CO₂), a new topic can be created without changing the existing system.
+Simpler debugging and maintenance
+If a problem occurs, it is easier to isolate and troubleshoot a specific sensor using its dedicated topic.
+
+If all sensor data were published in a single topic, data parsing and visualization would become more complex, and the system would be harder to maintain.

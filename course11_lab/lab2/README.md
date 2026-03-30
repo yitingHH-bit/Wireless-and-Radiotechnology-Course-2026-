@@ -12,6 +12,10 @@ Laptop 1 generates simulated sensor data and sends it to Laptop 2 through a TCP 
 Laptop 2 receives the data, separates the sensor values, and publishes them to different MQTT topics.  
 Finally, Grafana on Laptop 1 subscribes to those MQTT topics and displays the values in a live monitoring dashboard.
 
+
+# running GUI
+<img width="1697" height="1125" alt="image" src="https://github.com/user-attachments/assets/a7ed012f-8b17-473a-82b8-78ed0a4b26e9" />
+
 ---
 
 ## System Overview

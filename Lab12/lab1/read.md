@@ -1,4 +1,6 @@
 # 📹 IoT Video Pipeline Lab
+## over show
+<img width="1367" height="787" alt="image" src="https://github.com/user-attachments/assets/f5e40c58-d425-4a42-8945-d02b004f79cb" />
 
 ## 📌 Objective
 In this lab, we built an automated large-data IoT pipeline on Windows.

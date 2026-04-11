@@ -14,7 +14,7 @@ This simulates a simple IoT scenario where a sensor device transmits data to a c
 
 Server Bluetooth MAC address:
 
-XX:XX:XX:XX:XX:XX
+XX:XX:XX:XX:XX:XX  
 
 RFCOMM Channel / Port:
 
@@ -32,3 +32,6 @@ On the server device, run:
 
 ```bash
 python server.py
+
+Question:
+The main difference is that Bluetooth sockets are used for short-range, paired device communication, while WiFi sockets use IP-based networking for long-range and internet communication.
